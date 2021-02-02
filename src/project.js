@@ -3500,7 +3500,7 @@ window.__require = function e(t, n, o) {
                 this.node.getComponent(cc.PhysicsCircleCollider).apply(),
                 cc.tween(t.node).to(.1, {
                   position: n.node.position
-                }).caproll(function () {
+                }).call(function () {
                   i.default.Instance.createFruitSui(o.fruitNumber, n.node.position), i.default.Instance.createFruitL(o.fruitNumber, n.node.position, n.node.width),
                     i.default.Instance.createLevelUpFruit(o.fruitNumber + fruitVolume, n.node.position),
                     n.node.active = !1, t.node.active = !1, n.node.destroy(), t.node.destroy()
